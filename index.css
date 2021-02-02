@@ -1,14 +1,117 @@
+html,
+body {
+  width: 100%;
+}
+/* @media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 1140px;
+  }
+} */
+.logo {
+  position: absolute;
+  height: 120px;
+  width: 100px;
+  z-index: 30;
+  left: auto;
+  top: -26px;
+}
+.navbar {
+  background-color: #0096c7 !important;
+}
 .countries {
   background-color: #f5f5f5 !important;
+}
+ul {
+  list-style-type: none;
 }
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: grey;
 }
-.card {
-  border: 0 !important;
-  margin: 10px 6px;
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #f5f5f5;
+}
+.nav-link {
+  font-weight: 400;
+}
+.country {
+  background-color: rgba(207, 207, 207, 0.466);
+}
+.grid {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  align-items: center;
+}
+
+.grid > article {
+  background: #ffff;
+  border: none;
+  box-shadow: 2px 2px 6px 0 px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  text-align: center;
+  width: 260px;
+  transition: transform 0.3s;
+}
+
+.grid > article:hover {
+  transform: translateY(5px);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.grid > article img {
+  width: 80%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+article a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.text {
+  padding: 0 10px 10px;
+}
+.text h3 {
+  text-transform: uppercase;
+}
+.card-title1 {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  font-family: 'Montserrat';
+}
+.card-title1:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: '';
+  width: 25px;
+  height: 2px;
+  background: #e8000d;
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid > article {
+    width: 230px;
+  }
+}
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid > article {
+    text-align: center;
+  }
 }
 
 .abouttitle:after {
@@ -29,13 +132,22 @@ a {
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  font-family: 'robotomedium';
+  font-family: 'Montserrat';
 }
-@media all and (min-width: 992px) {
-  .card {
-    margin: 20px 10px;
+.title-templae {
+  font-size: 2rem;
+}
+
+@media (max-width: 512px) {
+  .text-migrate {
+    margin-left: -10px !important;
+    margin-right: -10px !important;
   }
-  .row {
-    --bs-gutter-x: 6rem !important;
+  .title-template {
+    font-size: 3rem;
   }
+}
+
+.col-lg-3 {
+  padding-right: 0px;
 }
