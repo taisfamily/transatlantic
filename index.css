@@ -132,7 +132,7 @@ article a:hover {
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  font-family: 'Montserrat';
+  font-family: 'Advent Pro', sans-serif;
 }
 .title-templae {
   font-size: 2rem;
@@ -150,4 +150,19 @@ article a:hover {
 
 .col-lg-3 {
   padding-right: 0px;
+}
+
+.content-title {
+  font-family: 'Advent Pro', sans-serif;
+}
+
+.content-subtitle {
+  font-family: 'Advent Pro', sans-serif;
+}
+
+.content-para {
+  font-family: 'Montserrat', sans-serif;
+}
+.about-content {
+  font-family: 'Montserrat', sans-serif;
 }
